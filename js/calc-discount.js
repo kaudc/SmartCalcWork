@@ -29,7 +29,6 @@ if (lastWageValue <= 1903.98) {
     var aliquotIrrf = 0.275;
     var parcelSubtractIrrf = 869.36;
 }
-console.log(lastWageValue)
 //Dependentes:
 if ((numberDependentsValue > 0) && (aliquotIrrf > 0)) {
     parcelSubtractIrrf += (189.59 * numberDependentsValue);
