@@ -1,0 +1,28 @@
+.form__button{
+    display: flex; 
+    width: 100%;
+}
+.button{
+    background-color: #F12711;
+    border-radius: 5px;
+    box-shadow: 0px 7px 5px rgba(20, 20, 20, 0.74);
+    color: #FFFFFF;
+    cursor:pointer;
+    font-size: 2.4rem;
+    font-weight: bold;
+    height: 4.8rem;
+    letter-spacing: 1.2px;
+    transition: 0.5s;
+    width: 17.9rem;
+    margin: 2rem 0 2rem 0;
+}
+@media screen and (min-width:0){
+    .form__button{
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width:564px){
+    .form__button{
+        justify-content: flex-end;
+    }
+}

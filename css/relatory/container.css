@@ -1,0 +1,30 @@
+html, body{
+    background-color: #FFFFFF;
+    background-image: url("../../img/border-right.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (min-width:0px){
+    html{
+        font-size: 50%;
+    }
+    .container{
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:900px){
+   html{
+    font-size: 58.5%;
+    }
+    .container{
+        justify-content: flex-start;
+    }
+}

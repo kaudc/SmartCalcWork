@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/form/container.css">
+    <link rel="stylesheet" href="./css/form/content.css">
+    <link rel="stylesheet" href="./css/form/background.css">
+    <link rel="stylesheet" href="./css/form/form.css">
+    <link rel="stylesheet" href="./css/form/form-input.css">
+    <link rel="stylesheet" href="./css/form/form-select.css">
+    <link rel="stylesheet" href="./css/form/form-radio.css">
+    <link rel="stylesheet" href="./css/form/form-button.css">
+
+
+    <title>Calculo Trabalhista - SmartCalcWork</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container__title">Cálculo de Rescisão do Contrato de Trabalho</h1>
+
+        <div class="content">
+            <form class="form">
+
+                <label class="form__input__label" for="date-start">Data início</label>
+                <div class="form__input" id="error-date-start">
+                    <input class="input" type="date" id="date-start" autofocus>
+                </div>
+
+                <label class="form__input__label" for="date-finish">Data término</label>
+                <div class="form__input" id="error-date-finish">
+                    <input class="input" type="date" id="date-finish">
+                </div>
+
+                <label class="form__input__label" for="last-wage">Ultimo salário</label>
+                <div class="form__input" id="error-last-wage">
+                    <input class="input" type="number" id="last-wage" placeholder="R$ 0.00">
+                </div>
+
+                <label class="form__input__label" for="number-dependents">Número de dependentes</label>
+                <div class="form__input" id="error-number-dependents">
+                    <input class="input" type="number" id="number-dependents" placeholder="0">
+                </div>
+
+                <label class="form__select__label" for="contract-finish">Motivo do término de contrato</label>
+                <select class="select" id="contract-finish">
+                    <option value="request">Pedido de demissão</option>
+                    <option value="just-cause">Dispensa com justa causa</option>
+                    <option value="no-just-cause">Dispensa sem justa causa</option>
+                </select>
+
+                <div class="form__radios">
+                    <label class="form__radio__label" for="expired-vacations">Você possui férias vencidas?</label>
+                    <div class="radios">
+                        <input class="radio" type="radio" value="true" id="expired-vacations" name="radio-vacation">
+                        <label class="radio__label" for="expired-vacations">Sim</label>
+                        <input class="radio" type="radio" value="false" id="no-expired-vacations" name="radio-vacation"
+                            checked>
+                        <label class="radio__label" for="no-expired-vacations">Não</label>
+                    </div>
+
+                    <label class="form__radio__label" for="early-warning">Você cumpriu aviso prévio?</label>
+                    <div class="radios">
+                        <input class="radio" type="radio" value="true" id="early-warning" name="radio-warning">
+                        <label class="radio__label" for="early-warning">Sim</label>
+                        <input class="radio" type="radio" value="false" id="no-early-warning" name="radio-warning"
+                            checked>
+                        <label class="radio__label" for="no-early-warning">Não</label>
+                    </div>
+                </div>
+
+                <div class="form__button">
+                    <button class="button" type="button">Calcular</button>
+                </div>
+
+            </form>
+
+            <div class="background__img">
+            </div>
+        </div>
+
+        <div class="background__circles">
+            <div class="circle"></div>
+            <div class="circle active"></div>
+            <div class="circle"></div>
+        </div>
+
+    </div>
+
+    <script src="./js/form.js"></script>
+    <script src="./js/error.js"></script>
+    <script src="./js/sweet-alert-2.js"></script>
+    <script src="./js/knockout-3.5.1.js"></script>
+    <script src="./js/knockout.js"></script>
+</body>
+
+</html>

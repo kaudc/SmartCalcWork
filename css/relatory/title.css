@@ -1,0 +1,14 @@
+.title__background{
+    background-image: url("../../img/border-top.png");
+    background-repeat: no-repeat;
+    height: 21.8rem;
+}
+.title__page{
+    margin: 0;
+    font-family: 'Sansation Light';
+    font-size: 6.4rem;
+    font-weight: normal;
+    color: white;
+    padding-top: 3.8rem;
+    padding-left: 8.8rem;
+}

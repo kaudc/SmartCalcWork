@@ -1,0 +1,61 @@
+.right{
+    background-color: #6A16E1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    position:relative;
+}
+.right__title{
+    color: #F0E9E9;
+    font-family: 'Sansation Light';
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 5rem;
+    text-align: center;
+}
+.right__img-vector{
+    background-image: url("../../img/woman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+@media screen and (min-width:0px) {
+     .right{
+         width: 100%;
+     }
+     .right__img-vector{
+        height: 55rem;
+    }
+    .right__menu{
+        align-items: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+     }
+ }
+ @media screen and (min-width:1000px) {
+    .right{
+        width: 50%;
+    }
+    .right__img-vector{
+        height: 32.0rem;
+    }
+    .right__menu{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 16.1rem;
+     }
+ }
+ @media screen and (min-width: 1200px) {
+     .right{
+         width: 41.64%;
+     }
+ }

@@ -1,0 +1,83 @@
+.content__table{
+    text-align: center;
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+.th{
+    border-right: 8rem solid transparent;
+    background-clip: padding-box;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.td{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.td:first-child{
+    text-align: left;
+}
+.tdProv{
+    color: green;
+}
+.tdDiscount{
+    color: red;
+}
+@media screen and (min-width:0px){
+    table{
+        background: rgb(255, 255, 255);
+    }
+    thead{
+        display: none;
+    }
+    .td:first-child{
+        text-align: center;
+        background: rgb(117, 52, 170);
+        color: white;
+    }
+    tbody tr{
+        display: flex;
+        flex-direction: column;
+    }
+    .td:nth-child(2)::before{
+        content: "Ref: "
+    }
+    .tdProv::before{
+        content: "Provento: R$ "
+    }
+    .tdDiscount::before{
+        content: "Desconto: R$ "
+    }
+    .td, .th{
+        font-size:2.8rem;
+    }
+}
+@media screen and (min-width:900px){
+    table{  
+        background: transparent;
+        margin-left: 5rem;
+    }
+    thead{
+        display: table-header-group;
+    }
+    .td:first-child{
+        text-align:justify;
+        background: transparent;
+        color: #4A00E0;
+    }
+    tbody tr{
+        display: table-row;
+    }
+    .tdProv::before, .tdDiscount::before{
+        content: "R$ ";
+    }
+    .td:nth-child(2)::before{
+        content: none;
+    }
+    .td, .th{
+        font-size: 1.8rem;
+    }
+}

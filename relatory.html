@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/relatory/container.css">
+    <link rel="stylesheet" href="./css/relatory/title.css">
+    <link rel="stylesheet" href="./css/relatory/content.css">
+    <link rel="stylesheet" href="./css/relatory/content-relatory.css">
+    <link rel="stylesheet" href="./css/relatory/content-table.css">
+    <link rel="stylesheet" href="./css/relatory/circles.css">
+    <link rel="stylesheet" href="./css/relatory/background-cellphone.css">
+    
+    
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <title>Resultados - SmartCalcWork</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <div class="title__background">
+                <h1 class="title__page">Resultado</h1>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="content__relatory" data-bind="hidden: details">
+                <p class="relatory__title">O valor líquido (depois dos descontos) da sua rescisão é de:</p>
+                <p class="relatory__value">R$ 592,76</p>
+                <button class="relatory__button" type="button" data-bind="click: moreDetails">Ver mais detalhes</button>
+            </div>
+
+            <div class="content__table" data-bind="visible: details">
+                <table> 
+                    <thead>
+                        <tr>
+                            <th class="th">Evento</th>
+                            <th class="th">Ref</th>
+                            <th class="th">Provento</th>
+                            <th class="th">Desconto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="balanceWage">
+                            <td class="td">Saldo de Salário</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="earlyWarningIndemnified">
+                            <td class="td">Aviso Prévio Indenizado</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="thirteenthProportional">
+                            <td class="td">13º Salário Proporcional</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="thirteenthEarlyWarning">
+                            <td class="td">13º Salário Aviso Prévio</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="expiredVacation">
+                            <td class="td">Férias Vencidas</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="vacationProportional">
+                            <td class="td">Férias Proporcionais</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="vacationEarlyWarning">
+                            <td class="td">Férias sobre Aviso Prévio</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr id="inssWage">
+                            <td class="td">INSS Salário</td>
+                            <td class="td"></td>
+                            <td class="td"></td>
+                            <td class="td tdDiscount"></td>
+                        </tr>
+                        <tr id="irrfWage">
+                            <td class="td">IRRF Salário</td>
+                            <td class="td"></td>
+                            <td class="td"></td>
+                            <td class="td tdDiscount"></td>
+                        </tr>
+                        <tr id="inssThirteenth">
+                            <td class="td">INSS 13º Salário</td>
+                            <td class="td"></td>
+                            <td class="td"></td>
+                            <td class="td tdDiscount"></td>
+                        </tr>
+                        <tr id="irrfThirteenth">
+                            <td class="td">IRRF 13º Salário</td>
+                            <td class="td"></td>
+                            <td class="td"></td>
+                            <td class="td tdDiscount"></td>
+                        </tr>
+                        <tr id="total">
+                            <td class="td">Total</td>
+                            <td class="td"></td>
+                            <td class="td tdProv"></td>
+                            <td class="td tdDiscount"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="circles" data-bind="hidden: details">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle active"></div>
+        </div>
+    </div>
+
+    <div class="background__cellphone" data-bind="hidden: details"></div>
+
+
+    <script src="./js/calculate-date.js"></script>
+    <script src="./js/calc-prov.js"></script>
+    <script src="./js/calc-discount.js"></script>
+    <script src="./js/add-formulary.js"></script>
+    <script src="./js/knockout-3.5.1.js"></script>
+    <script src="./js/knockout.js"></script>
+</body>
+
+</html>

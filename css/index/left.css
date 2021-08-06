@@ -1,0 +1,16 @@
+.left{
+    background-image: url("../../img/background-peoples.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+ @media screen and (min-width:1000px) {
+    .left{
+        width: calc(100% - 50%);
+    }
+}
+ @media screen and (min-width: 1200px) {
+     .left{
+        width: calc(100% - 41.64%);
+     }
+ }

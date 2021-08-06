@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 0.5rem;
+}
+@media screen and (min-width:0) {
+    .form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+}
+@media screen and (min-width:564px) {
+    .form{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:1000px) {
+    .form{
+        width: 45%;
+    }
+}
+@media screen and (min-width:1400px) {
+    .form{
+        width: 50%;
+    }
+}

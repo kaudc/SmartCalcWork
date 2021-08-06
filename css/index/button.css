@@ -1,0 +1,27 @@
+.button{
+    position: relative;
+}
+@media screen and (min-width:0px) {
+     .menu__button{
+        background: linear-gradient(140deg, #f25314fd 50%, #f1ee2ece);
+        border-radius: 10px;
+        padding: 0.5rem 0.2rem 0.2rem 2rem ;
+        margin-bottom: 5rem;
+     }
+ }
+ @media screen and (min-width:1000px){
+   .menu__button{
+      background-color: transparent;
+      background-image: url("../../img/button.png");
+      border-radius: 0;
+      height: 16.1rem;
+      margin-bottom: 0;
+      padding: 0;
+      width: 37.7rem;
+   }
+   .button__img{
+      position: absolute;
+      bottom: 2.2rem;
+      margin-left: 8rem;
+   }
+ }

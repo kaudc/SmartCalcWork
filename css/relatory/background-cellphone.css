@@ -1,0 +1,20 @@
+.background__cellphone{
+    background-image: url("../../img/cellphone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30.6rem;
+    position: absolute;
+    right: 16rem;
+    bottom:10%;
+    width: 40.6rem;
+}
+@media screen and (min-width:0px) {
+    .background__cellphone{
+        display: none;
+    }
+}
+@media screen and (min-width:1100px){
+    .background__cellphone{
+        display: block;
+    }
+}
