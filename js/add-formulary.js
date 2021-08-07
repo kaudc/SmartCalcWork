@@ -9,12 +9,12 @@ function addProvTable(id, ref, prov) {
     tdDiscount.textContent = "-";
 }
 addProvTable("#balanceWage", dayFinish, balanceWage);
-addProvTable("#earlyWarningIndemnified", timeEarlyWarning, earlyWarningIndemnified);
+addProvTable("#earlyWarningIndemnified", timeDayEarlyWarning, earlyWarningIndemnified);
 addProvTable("#thirteenthProportional", (monthWorkedYear + "/12"), thirteenthProportional);
-addProvTable("#thirteenthEarlyWarning", "1/12", thirteenthEarlyWarning);
+addProvTable("#thirteenthEarlyWarning", timeMonthEarlyWarning + "/12", thirteenthEarlyWarning);
 addProvTable("#expiredVacation",timeExpiredVacation, expiredVacation);
 addProvTable("#vacationProportional", (monthDepend + "/12"), vacationProportional);
-addProvTable("#vacationEarlyWarning", "1/12", vacationEarlyWarning);
+addProvTable("#vacationEarlyWarning", timeMonthEarlyWarning + "/12", vacationEarlyWarning);
 
 //Adiciona descontos:
 function addDiscountTable(id, ref, discount) {

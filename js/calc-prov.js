@@ -35,12 +35,14 @@ if (earlyWarningValue == "true") {
     if (daysForYearContract > 90) {
         daysForYearContract = 90;
     }
-    var timeEarlyWarning = 30 + daysForYearContract;
+    var timeDayEarlyWarning = 30 + daysForYearContract;
+    var timeMonthEarlyWarning = 1;
     var earlyWarningIndemnified = calcEarlyWarningIndemnified();
     var vacationEarlyWarning = calcVacationEarlyWarning();
     var thirteenthEarlyWarning = calcThirteenthEarlyWarning();
 } else {
-    var timeEarlyWarning = 0;
+    var timeDayEarlyWarning = 0;
+    var timeMonthEarlyWarning = 0;
     var earlyWarningIndemnified = 0;
     var vacationEarlyWarning = 0;
     var thirteenthEarlyWarning = 0;
@@ -61,7 +63,7 @@ function calcBalanceWage() {
     return balanceWage;
 }
 function calcEarlyWarningIndemnified() {
-    var earlyWarningIndemnified = (wageForDay * timeEarlyWarning);
+    var earlyWarningIndemnified = (wageForDay * timeDayEarlyWarning);
     return earlyWarningIndemnified;
 }
 function calcThirteenthProportional() {
@@ -69,7 +71,7 @@ function calcThirteenthProportional() {
     return thirteenthProportional;
 }
 function calcThirteenthEarlyWarning() {
-    var thirteenthEarlyWarning = (wageForDay * timeEarlyWarning);
+    var thirteenthEarlyWarning = (wageForDay * timeDayEarlyWarning);
     return thirteenthEarlyWarning;
 }
 function calcExpiredVacation() {
