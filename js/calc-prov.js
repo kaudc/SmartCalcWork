@@ -48,8 +48,10 @@ if (earlyWarningValue == "true") {
 
 if(expiredVacationValue == "true"){
     var expiredVacation = calcExpiredVacation();
+    timeExpiredVacation = 1;
 }else{
     var expiredVacation = 0;
+    timeExpiredVacation = 0;
 }
 
 

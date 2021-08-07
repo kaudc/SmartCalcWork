@@ -12,7 +12,7 @@ addProvTable("#balanceWage", dayFinish, balanceWage);
 addProvTable("#earlyWarningIndemnified", timeEarlyWarning, earlyWarningIndemnified);
 addProvTable("#thirteenthProportional", (monthWorkedYear + "/12"), thirteenthProportional);
 addProvTable("#thirteenthEarlyWarning", "1/12", thirteenthEarlyWarning);
-addProvTable("#expiredVacation", 1, expiredVacation);
+addProvTable("#expiredVacation",timeExpiredVacation, expiredVacation);
 addProvTable("#vacationProportional", (monthDepend + "/12"), vacationProportional);
 addProvTable("#vacationEarlyWarning", "1/12", vacationEarlyWarning);
 
