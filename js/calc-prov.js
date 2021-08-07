@@ -23,12 +23,10 @@ if ((contractFinishValue == "request") || (contractFinishValue == "no-just-cause
     var balanceWage = calcBalanceWage();
     var thirteenthProportional = calcThirteenthProportional();
     var vacationProportional = calcVacationProportional();
-    var expiredVacation = calcExpiredVacation();
 } else if (contractFinishValue == "just-cause") {
     var balanceWage = calcBalanceWage();
     var thirteenthProportional = calcThirteenthProportional();
     var vacationProportional = 0;
-    var expiredVacation = calcExpiredVacation();
 }
 
 //Aviso prévio:
@@ -47,6 +45,13 @@ if (earlyWarningValue == "true") {
     var vacationEarlyWarning = 0;
     var thirteenthEarlyWarning = 0;
 }
+
+if(expiredVacationValue == "true"){
+    var expiredVacation = calcExpiredVacation();
+}else{
+    var expiredVacation = 0;
+}
+
 
 //Proventos: 
 function calcBalanceWage() {
